@@ -8,7 +8,10 @@ function App() {
         FirstName='Mohd'
         LastName='Anzar'
         Age={12}
-        changeMinus={(set, setCount) => {
+        changeMinus={(
+          set: number,
+          setCount: React.Dispatch<React.SetStateAction<number>>
+        ) => {
           setCount(set - 1);
         }}
         changePlus={(set, setCount) => {
